@@ -8,6 +8,9 @@ import { PersonalShopMainHeaderComponent } from './components/shared/personal-sh
 import { PersonalShopMainFooterComponent } from './components/shared/personal-shop-main-footer/personal-shop-main-footer.component';
 import { PersonalShopStoreContextComponent } from './components/shop/personal-shop-store-context/personal-shop-store-context.component';
 import { PersonalShopHomeMainSliderComponent } from './components/home/personal-shop-home-main-slider/personal-shop-home-main-slider.component';
+import {CarouselModule} from "ngx-owl-carousel-o";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { PersonalShopHomeMainSliderComponent } from './components/home/personal-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
