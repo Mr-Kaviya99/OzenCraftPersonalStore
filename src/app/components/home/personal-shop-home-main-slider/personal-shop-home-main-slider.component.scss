@@ -27,7 +27,7 @@
   font-family: "Dancing Script", cursive;
   font-size: 28px;
   animation: fadeIn 1s ease-out forwards; /* Added 'forwards' for fill-mode */
-  animation-delay: 0.5s; /* Adjust the delay as needed */
+  //animation-delay: 0.5s; /* Adjust the delay as needed */
 }
 
 .line {
@@ -38,7 +38,7 @@
   height: 3px;
   transform-origin: 50% 50%;
   animation: fadeIn 1s ease-out forwards; /* Added 'forwards' for fill-mode */
-  animation-delay: 1s; /* Adjust the delay as needed */
+  animation-delay: 0.2s; /* Adjust the delay as needed */
 }
 
 .carousel-item-title {
@@ -51,7 +51,7 @@
   font-size: 37px;
   transform-origin: 50% 50%;
   animation: fadeIn 1s ease-out forwards; /* Added 'forwards' for fill-mode */
-  animation-delay: 1.5s; /* Adjust the delay as needed */
+  animation-delay: 0.4s; /* Adjust the delay as needed */
 }
 
 .carousel-item-subtitle {
@@ -64,7 +64,7 @@
   font-size: 17px;
   transform-origin: 50% 50%;
   animation: fadeIn 1s ease-out forwards; /* Added 'forwards' for fill-mode */
-  animation-delay: 2s; /* Adjust the delay as needed */
+  animation-delay: 0.6s; /* Adjust the delay as needed */
 }
 
 .shop-now {
@@ -82,7 +82,7 @@
   border: none;
   margin-top: 25px;
   animation: fadeIn 1s ease-out forwards; /* Added 'forwards' for fill-mode */
-  animation-delay: 2.5s; /* Adjust the delay as needed */
+  animation-delay: 0.8s; /* Adjust the delay as needed */
 }
 
 .carousel-item-image {
@@ -90,7 +90,8 @@
   width: 100%;
   height: auto;
   animation: flipToRight 1s ease-out forwards;
-  img{
+
+  img {
     width: 100%;
     height: auto;
   }

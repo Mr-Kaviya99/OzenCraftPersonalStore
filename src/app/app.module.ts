@@ -11,6 +11,13 @@ import { PersonalShopHomeMainSliderComponent } from './components/home/personal-
 import {CarouselModule} from "ngx-owl-carousel-o";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
+import { PersonalShopHomeTopOffersComponent } from './components/home/personal-shop-home-top-offers/personal-shop-home-top-offers.component';
+import { PersonalShopHomeWeeklyDealComponent } from './components/home/personal-shop-home-weekly-deal/personal-shop-home-weekly-deal.component';
+import { PersonalShopHomeOurServicesComponent } from './components/home/personal-shop-home-our-services/personal-shop-home-our-services.component';
+import { PersonalShopHomeTopProductsComponent } from './components/home/personal-shop-home-top-products/personal-shop-home-top-products.component';
+import { PersonalShopHomeSaleBannerComponent } from './components/home/personal-shop-home-sale-banner/personal-shop-home-sale-banner.component';
+import { PersonalShopHomeSpecialsComponent } from './components/home/personal-shop-home-specials/personal-shop-home-specials.component';
+import { PersonalShopHomeSubscriptionComponent } from './components/home/personal-shop-home-subscription/personal-shop-home-subscription.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +26,14 @@ import {MatIconModule} from "@angular/material/icon";
     PersonalShopMainHeaderComponent,
     PersonalShopMainFooterComponent,
     PersonalShopStoreContextComponent,
-    PersonalShopHomeMainSliderComponent
+    PersonalShopHomeMainSliderComponent,
+    PersonalShopHomeTopOffersComponent,
+    PersonalShopHomeWeeklyDealComponent,
+    PersonalShopHomeOurServicesComponent,
+    PersonalShopHomeTopProductsComponent,
+    PersonalShopHomeSaleBannerComponent,
+    PersonalShopHomeSpecialsComponent,
+    PersonalShopHomeSubscriptionComponent,
   ],
   imports: [
     BrowserModule,
