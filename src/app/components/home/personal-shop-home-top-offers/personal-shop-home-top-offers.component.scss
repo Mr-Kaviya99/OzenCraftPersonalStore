@@ -1,0 +1,68 @@
+.top-offers-inner {
+  min-height: 200px;
+}
+
+.offer-card-outer {
+  margin-top: 24px;
+}
+
+.offer-card {
+  min-height: 175px;
+  background-color: #ECECEC;
+  box-sizing: border-box;
+  border: 0.5px solid #DCDCDC;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offer-card-left {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offer-card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-card-left-outer,
+.offer-card-right-outer {
+  display: flex;
+  align-items: center;
+}
+
+.fancy-text {
+  font-family: "Dancing Script", cursive;
+  color: #808080;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: default;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: default;
+}
+
+.shop-now {
+  font-weight: 500;
+  font-size: 0.813rem;
+  color: #da2128;
+  cursor: default;
+}
+
+.offer-card-image-outer {
+  width: 100%;
+  height: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
