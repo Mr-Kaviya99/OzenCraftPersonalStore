@@ -25,9 +25,10 @@
 
 .fancy-text {
   font-family: "Dancing Script", cursive;
-  font-size: 28px;
-  animation: fadeIn 1s ease-out forwards; /* Added 'forwards' for fill-mode */
-  //animation-delay: 0.5s; /* Adjust the delay as needed */
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: rgb(85, 85, 85);
+  animation: fadeIn 1s ease-out forwards;
 }
 
 .line {
@@ -37,34 +38,33 @@
   width: 75px;
   height: 3px;
   transform-origin: 50% 50%;
-  animation: fadeIn 1s ease-out forwards; /* Added 'forwards' for fill-mode */
-  animation-delay: 0.2s; /* Adjust the delay as needed */
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.2s;
 }
 
 .carousel-item-title {
   margin-top: 20px;
   color: rgb(42, 42, 42);
-  text-decoration: none;
+  text-wrap: normal;
   text-align: left;
   letter-spacing: 1px;
   font-weight: 700;
-  font-size: 37px;
-  transform-origin: 50% 50%;
-  animation: fadeIn 1s ease-out forwards; /* Added 'forwards' for fill-mode */
-  animation-delay: 0.4s; /* Adjust the delay as needed */
+  font-size: 2.313rem;
+  line-height: 1.1;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.4s;
 }
 
 .carousel-item-subtitle {
   color: rgb(0, 0, 0);
   text-decoration: none;
-  white-space: nowrap;
   text-align: inherit;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1.063rem;
   transform-origin: 50% 50%;
-  animation: fadeIn 1s ease-out forwards; /* Added 'forwards' for fill-mode */
-  animation-delay: 0.6s; /* Adjust the delay as needed */
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.6s;
 }
 
 .shop-now {
@@ -76,13 +76,13 @@
   text-align: inherit;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   padding: 9px 19px;
   transform-origin: 50% 50%;
   border: none;
   margin-top: 25px;
-  animation: fadeIn 1s ease-out forwards; /* Added 'forwards' for fill-mode */
-  animation-delay: 0.8s; /* Adjust the delay as needed */
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.8s;
 }
 
 .carousel-item-image {
@@ -99,8 +99,8 @@
 
 .buttons-outer {
   position: absolute;
-  left: 10px;
-  right: 10px;
+  left: 25px;
+  right: 20px;
   top: 0;
   bottom: 0;
   display: flex;
@@ -154,5 +154,37 @@
   }
   100% {
     transform: rotateX(0deg); /* Final state, flipped to the right */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .item-outer {
+    padding: 50px 0;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .carousel-item-image {
+    max-width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .buttons-outer {
+    left: 15px;
+    right: 10px;
+  }
+  .carousel-item-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .fancy-text,
+  .carousel-item-title,
+  .carousel-item-subtitle{
+    text-align: center;
   }
 }
