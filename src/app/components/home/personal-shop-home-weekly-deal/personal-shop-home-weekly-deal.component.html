@@ -1,1 +1,50 @@
-<p>personal-shop-home-weekly-deal works!</p>
+<div class="personal-shop-home-weekly-deal-outer">
+  <div class="container">
+    <div class="title-outer">
+      <h2 class="main-title">Weekly Deal Product</h2>
+      <div class="line"></div>
+    </div>
+
+  </div>
+
+  <div class="weekly-deal-category-outer">
+    <div class="container">
+      <div class="content-title-outer">
+        <h2 class="content-title">Shop By Category</h2>
+        <div class="line"></div>
+      </div>
+    </div>
+    <!--        /////////////////////////////-->
+    <div class="slider-wrapper">
+      <div class="slider-outer">
+        <div class="container">
+          <owl-carousel-o [options]="customOptions" #carousel class="slider">
+            <ng-container *ngFor="let slide of carouselData">
+              <ng-template carouselSlide>
+                <div class="slider-content-category-card-outer">
+                  <div class="slider-content-category-card">
+                    <div class="slider-content-category-card-image">
+                      <img
+                        src="https://mma.prnewswire.com/media/2005357/Sony_WH_CH520_headphone.jpg?w=200"
+                        alt="">
+                    </div>
+                    <p class="slider-content-category-card-text">Accessories</p>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+        </div>
+      </div>
+      <div class="buttons-outer">
+        <div class="button-prev" (click)="sliderPrev(carousel)">
+          <mat-icon>arrow_back_ios</mat-icon>
+        </div>
+        <div class="button-next" (click)="sliderNext(carousel)">
+          <mat-icon>arrow_forward_ios</mat-icon>
+        </div>
+      </div>
+    </div>
+    <!--        /////////////////////////////-->
+  </div>
+</div>
