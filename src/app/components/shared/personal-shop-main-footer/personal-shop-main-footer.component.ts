@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./personal-shop-main-footer.component.scss']
 })
 export class PersonalShopMainFooterComponent {
+  date=new Date();
 
 }

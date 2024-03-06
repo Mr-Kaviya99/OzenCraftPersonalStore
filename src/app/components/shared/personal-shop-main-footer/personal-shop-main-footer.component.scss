@@ -12,6 +12,13 @@
   grid-row-gap: 15px;
 }
 
+.container {
+  hr {
+    background-color: white;
+    color: white;
+  }
+}
+
 .options-outer {
   color: white;
 
@@ -59,4 +66,8 @@
 
 .option {
   margin-top: 10px;
+}
+
+.copyright{
+  color: white;
 }

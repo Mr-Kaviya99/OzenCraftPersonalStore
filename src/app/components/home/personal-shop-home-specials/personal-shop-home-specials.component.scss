@@ -54,7 +54,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  img{
+
+  img {
     width: 100%;
     height: auto;
   }
@@ -76,12 +77,11 @@
   text-transform: capitalize;
 }
 
-.price{
+.price {
   font-weight: 700;
   color: #da2128;
   font-size: 15px;
 }
-
 
 
 @media only screen and (max-width: 1200px) {
@@ -93,16 +93,15 @@
 }
 
 @media only screen and (max-width: 992px) {
-
+  .title-outer {
+    position: relative;
+  }
   .products-outer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .title-outer {
-    position: relative;
-  }
   .products-outer {
     grid-template-columns: repeat(1, 1fr);
   }
