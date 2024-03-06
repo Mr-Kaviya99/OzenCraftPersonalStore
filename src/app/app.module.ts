@@ -23,6 +23,8 @@ import { PersonalShopProductCardComponent } from './components/shared/personal-s
 import { PersonalShopStoreFiltersComponent } from './components/shop/personal-shop-store-filters/personal-shop-store-filters.component';
 import { PersonalShopStoreProductsComponent } from './components/shop/personal-shop-store-products/personal-shop-store-products.component';
 import {MatSliderModule} from "@angular/material/slider";
+import { BackToTopButtonComponent } from './components/shared/back-to-top-button/back-to-top-button.component';
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -42,6 +44,7 @@ import {MatSliderModule} from "@angular/material/slider";
     PersonalShopProductCardComponent,
     PersonalShopStoreFiltersComponent,
     PersonalShopStoreProductsComponent,
+    BackToTopButtonComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import {MatSliderModule} from "@angular/material/slider";
     BrowserAnimationsModule,
     MatIconModule,
     MatTabsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

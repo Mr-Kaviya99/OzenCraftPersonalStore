@@ -2,6 +2,17 @@
   border: .5px solid #dddddd;
   max-width: 262px;
   height: auto;
+  position: relative;
+}
+
+.shop-product-card-outer:hover {
+  .option-list {
+    display: flex;
+  }
+
+  .offer {
+    display: none;
+  }
 }
 
 .product-image {
@@ -51,10 +62,57 @@
   text-transform: capitalize;
 }
 
-.price{
+.price {
   font-weight: 700;
   color: #da2128;
   font-size: 15px;
 }
 
+.offer {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  min-width: 35px;
+  height: 15px;
+  background-color: #da2128;
+  color: white;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 1px 0 0 15px;
 
+  span {
+    font-size: 11px;
+  }
+}
+
+.option-list {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  flex-direction: column;
+  gap: 5px;
+  margin: 3px;
+}
+
+.option:hover {
+  background-color: #da2128;
+}
+
+.option {
+  width: 28px;
+  height: 28px;
+  background-color: #C1C1C1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  mat-icon {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    color: white;
+  }
+}
