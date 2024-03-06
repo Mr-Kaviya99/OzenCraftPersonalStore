@@ -1,0 +1,142 @@
+.shop-product-card-outer {
+  border: .5px solid #dddddd;
+  max-width: 262px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.shop-product-card-outer:hover {
+  .option-list {
+    display: flex;
+  }
+
+  .offer {
+    display: none;
+  }
+}
+
+.product-image {
+  width: 100%;
+  height: fit-content;
+  max-height: 268px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.star-rating {
+  display: flex;
+
+  mat-icon {
+    font-size: 15px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.gold-star {
+  color: gold;
+}
+
+.black-star {
+  color: rgba(211, 211, 211);
+}
+
+.product-description {
+  padding: 15px 20px;
+  margin-top: 10px;
+  border-top: .5px solid #dddddd;
+}
+
+.product-title {
+  text-decoration: none;
+  margin: 5px 0;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 7px 0;
+  text-transform: capitalize;
+}
+
+.price {
+  font-weight: 700;
+  color: #da2128;
+  font-size: 15px;
+}
+
+.actual-price{
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #d4d4d4;
+  text-decoration: line-through;
+}
+
+.offer {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  min-width: 35px;
+  height: 15px;
+  background-color: #da2128;
+  color: white;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 1px 5px 0 15px;
+  animation: fadeIn 300ms ease-out;
+
+
+  span {
+    font-size: 11px;
+  }
+}
+
+.option-list {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  flex-direction: column;
+  gap: 5px;
+  margin: 3px;
+  animation: fadeIn 300ms ease-out;
+}
+
+.option:hover {
+  background-color: #da2128;
+}
+
+.option {
+  width: 28px;
+  height: 28px;
+  background-color: #C1C1C1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  mat-icon {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    color: white;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(+20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

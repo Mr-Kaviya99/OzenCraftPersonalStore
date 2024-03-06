@@ -1,0 +1,54 @@
+.personal-shop-main-header-outer {
+}
+
+.header-inner {
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.menu-option {
+  padding: 15px 20px;
+  margin: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-right: 1px solid #434343;
+  transition: all 400ms;
+}
+
+.menu-option:hover {
+  background-color: rgb(218, 33, 40);
+}
+
+.opt {
+  color: white;
+  margin: 0;
+}
+
+.right-shop-name {
+  background-color: rgb(218, 33, 40);
+  border: 1px solid rgb(218, 33, 40);
+  color: white;
+  padding: 15px 20px;
+  transition: all 400ms;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.right-shop-name:hover {
+  background-color: white;
+  color: #2a2a2a;
+  border: 1px solid #434343;
+}
+
+.shop-name {
+  text-transform: uppercase;
+  margin: 0;
+}

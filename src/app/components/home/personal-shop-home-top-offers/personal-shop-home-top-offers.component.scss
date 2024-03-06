@@ -1,0 +1,105 @@
+.top-offers-inner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 5px;
+}
+
+.offer-card-outer {
+  margin-top: 24px;
+  padding: 15px 20px;
+  background-color: #ECECEC;
+  border: 0.5px solid #DCDCDC;
+}
+
+.offer-card-inner {
+  position: relative;
+  min-height: 175px;
+}
+
+.product-image-outer {
+  position: absolute;
+  right: 0;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.offer-card-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 25%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fancy-text {
+  font-family: "Dancing Script", cursive;
+  color: #808080;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: default;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: default;
+}
+
+.shop-now {
+  font-weight: 500;
+  font-size: 0.813rem;
+  color: #da2128;
+  cursor: pointer;
+}
+
+.offer-card-right-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  height: 100%;
+}
+
+.offer-card-image-outer {
+  width: 100%;
+  height: fit-content;
+
+  img {
+    opacity: 0.8;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .fancy-text,
+  .title, {
+    text-align: center;
+  }
+
+  .offer-card-text {
+    align-items: center;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .top-offers-inner {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,141 @@
+
+.weekly-deal-title-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+
+.weekly-deal-main-title {
+  text-align: center;
+  color: #2a2a2a;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 15px 0 0 0;
+  margin: 0 0 12px 0;
+}
+
+.weekly-deal-line {
+  background: #da2128;
+  max-width: 90px;
+  width: 100%;
+  height: 3px;
+}
+
+.weekly-deal-category-outer {
+  margin-top: 50px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2019/10/Parralax.jpg?id=10586") fixed top no-repeat;
+  height: 50vh;
+  background-size: cover;
+  min-height: 475px;
+  padding: 80px 0;
+}
+
+.content-title-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-title {
+  text-align: center;
+  color: white;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 15px 0 0 0;
+  margin: 0 0 12px 0;
+}
+
+///////////////////
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.buttons-outer {
+  position: absolute;
+  left: 25px;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-next {
+  right: 0;
+}
+
+.button-prev {
+  left: 0;
+}
+
+.button-prev,
+.button-next {
+  color: #999999;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+
+  i {
+    font-size: 40px;
+  }
+}
+
+.slider ::ng-deep .owl-theme .owl-dots .owl-dot span {
+  background: var(--primary-blue);
+}
+
+/* Set active dot color to primary orange */
+.slider ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+.slider .owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--primary-orange);
+}
+
+.slider-content-category-card-outer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-content-category-card {
+  width: 208px;
+  max-height: 230px;
+  background-color: white;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slider-content-category-card-image {
+  width: 75%;
+  max-height: 150px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.slider-content-category-card-text {
+  font-size: 15px;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+  word-break: break-word;
+  padding: 0 15px;
+}

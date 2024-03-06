@@ -1,0 +1,37 @@
+<div class="top-products-outer">
+  <div class="container">
+    <div class="tabs-outer">
+      <div class="top-outer">
+        <div class="title-outer">
+          <div class="title-inner">
+            <h2 class="main-title">Top Product</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="button-list">
+          <div class="tab-button" (click)="selectTab('Best Seller')" [class.selected]="selectedTab === 'Best Seller'">
+            Best Seller
+          </div>
+          <div class="tab-button" (click)="selectTab('Special')" [class.selected]="selectedTab === 'Special'">Special
+          </div>
+          <div class="tab-button" (click)="selectTab('Latest')" [class.selected]="selectedTab === 'Latest'">Latest</div>
+          <div class="tab-button" (click)="selectTab('Featured')" [class.selected]="selectedTab === 'Featured'">
+            Featured
+          </div>
+        </div>
+      </div>
+
+      <div class="products-outer">
+        <app-personal-shop-product-card></app-personal-shop-product-card>
+        <app-personal-shop-product-card></app-personal-shop-product-card>
+        <app-personal-shop-product-card></app-personal-shop-product-card>
+        <app-personal-shop-product-card></app-personal-shop-product-card>
+        <app-personal-shop-product-card></app-personal-shop-product-card>
+        <app-personal-shop-product-card></app-personal-shop-product-card>
+        <app-personal-shop-product-card></app-personal-shop-product-card>
+      </div>
+
+    </div>
+
+  </div>
+</div>

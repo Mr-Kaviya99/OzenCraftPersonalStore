@@ -1,0 +1,39 @@
+<div class="personal-shop-home-main-slider">
+  <div class="slider-wrapper">
+    <div class="slider-outer">
+      <owl-carousel-o [options]="customOptions" #carousel class="slider">
+        <ng-container *ngFor="let slide of carouselData">
+          <ng-template carouselSlide>
+            <div class="container">
+              <div class="item-outer">
+                <div class="carousel-item-left">
+                  <p class="fancy-text">Watch Mega Sale</p>
+                  <div class="line"></div>
+                  <h2 class="carousel-item-title">UP TO 30% OFF <br>ON LED & DESKTOP</h2>
+                  <p class="carousel-item-subtitle">Amazing Deals. Great 100+ Brands. Real Saving.</p>
+                  <button class="shop-now">Shop Now</button>
+                </div>
+                <div class="carousel-item-right">
+                  <div class="carousel-item-image">
+                    <img
+                      src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2019/10/slider-img2.png"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+
+      </owl-carousel-o>
+    </div>
+    <div class="buttons-outer">
+      <div class="button-prev" (click)="sliderPrev(carousel)">
+        <mat-icon>arrow_back_ios</mat-icon>
+      </div>
+      <div class="button-next" (click)="sliderNext(carousel)">
+        <mat-icon>arrow_forward_ios</mat-icon>
+      </div>
+    </div>
+  </div>
+</div>

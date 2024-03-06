@@ -1,0 +1,195 @@
+.personal-shop-home-main-slider {
+  background-color: #E9D3DD;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.item-outer {
+  padding: 0 15px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fancy-text,
+.line,
+.carousel-item-title,
+.carousel-item-subtitle,
+.shop-now {
+  opacity: 0;
+}
+
+.fancy-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: rgb(85, 85, 85);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.line {
+  margin-top: 20px;
+  background-color: rgb(218, 33, 40);
+  color: rgb(255, 255, 255);
+  width: 75px;
+  height: 3px;
+  transform-origin: 50% 50%;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.carousel-item-title {
+  margin-top: 20px;
+  color: rgb(42, 42, 42);
+  text-wrap: normal;
+  text-align: left;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 2.313rem;
+  line-height: 1.1;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.carousel-item-subtitle {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: inherit;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1.063rem;
+  transform-origin: 50% 50%;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.shop-now {
+  background-color: rgb(218, 33, 40);
+  height: auto;
+  width: auto;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  text-align: inherit;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 0.75rem;
+  padding: 9px 19px;
+  transform-origin: 50% 50%;
+  border: none;
+  margin-top: 25px;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+.carousel-item-image {
+  max-width: 40vw;
+  width: 100%;
+  height: auto;
+  animation: flipToRight 1s ease-out forwards;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.buttons-outer {
+  position: absolute;
+  left: 25px;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-next {
+  right: 0;
+}
+
+.button-prev {
+  left: 0;
+}
+
+.button-prev,
+.button-next {
+  color: var(--primary-orange);
+  position: absolute;
+  z-index: 100;
+
+  i {
+    font-size: 40px;
+  }
+}
+
+.slider ::ng-deep .owl-theme .owl-dots .owl-dot span {
+  background: var(--primary-blue);
+}
+
+/* Set active dot color to primary orange */
+.slider ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+.slider .owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--primary-orange);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes flipToRight {
+  0% {
+    transform: rotateX(-180deg); /* Initial state, not flipped */
+  }
+  100% {
+    transform: rotateX(0deg); /* Final state, flipped to the right */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .item-outer {
+    padding: 50px 0;
+    flex-direction: column-reverse;
+    gap: 30px;
+    align-items: center;
+  }
+  .carousel-item-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .fancy-text,
+  .carousel-item-title,
+  .carousel-item-subtitle{
+    text-align: center;
+  }
+  .carousel-item-image {
+    max-width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .buttons-outer {
+    left: 15px;
+    right: 10px;
+  }
+  .carousel-item-image {
+    max-width: 65vw;
+  }
+  .carousel-item-title{
+    font-size: 2rem;
+  }
+}
