@@ -1,10 +1,16 @@
 .personal-shop-store-filters-outer {
-  //border: 1px solid red;
   min-height: 100vh;
 
   hr {
     margin: 5px 0;
   }
+}
+.filter-option-list {
+  display: none;
+}
+
+.expanded-filter-option-list {
+  display: block;
 }
 
 .filter-types {
@@ -14,6 +20,9 @@
 .filter-title-outer {
   background-color: #d4d4d4;
   padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .filter-title {
@@ -62,7 +71,7 @@ mat-slider {
 }
 
 .tag {
-  border:.5px solid #dddddd;
+  border: .5px solid #dddddd;
   padding: 5px 6px;
   border-radius: 4px;
   text-transform: capitalize;

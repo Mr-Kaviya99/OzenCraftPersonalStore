@@ -1,22 +1,25 @@
 <div class="personal-shop-store-filters-outer">
-  <div class="filter-types">
-    <div class="filter-title-outer">
+  <div class="filter-types" >
+    <div class="filter-title-outer" (click)="expand('categories')">
       <h2 class="filter-title">Product categories</h2>
+      <mat-icon (click)="expand('categories')">{{expandOption === 'categories' ? 'expand_less' : 'expand_more'}}</mat-icon>
     </div>
     <hr>
-    <ul class="filter-option-list">
+    <ul class="filter-option-list" [class.expanded-filter-option-list]="expandOption === 'categories'">
       <li><span>Accessories</span><span>+</span></li>
       <li><span>Appliances</span><span>+</span></li>
       <li><span>Electronics</span><span>+</span></li>
       <li><span>Entertainments</span><span>+</span></li>
     </ul>
   </div>
+
   <div class="filter-types">
-    <div class="filter-title-outer">
+    <div class="filter-title-outer" (click)="expand('price')">
       <h2 class="filter-title">Filter By Price</h2>
+      <mat-icon (click)="expand('price')">{{expandOption === 'price' ? 'expand_less' : 'expand_more'}}</mat-icon>
     </div>
     <hr>
-    <ul class="filter-option-list">
+    <ul class="filter-option-list"  [class.expanded-filter-option-list]="expandOption === 'price'">
       <li>
         <mat-slider min="0" max="500" color="warn">
           <input value="30" matSliderStartThumb>
@@ -28,11 +31,12 @@
     </ul>
   </div>
   <div class="filter-types">
-    <div class="filter-title-outer">
+    <div class="filter-title-outer" (click)="expand('color')">
       <h2 class="filter-title">Filter By Color</h2>
+      <mat-icon (click)="expand('color')">{{expandOption === 'color' ? 'expand_less' : 'expand_more'}}</mat-icon>
     </div>
     <hr>
-    <ul class="filter-option-list">
+    <ul class="filter-option-list" [class.expanded-filter-option-list]="expandOption === 'color'">
       <li><span>Black (8)</span></li>
       <li><span>Blue (8)</span></li>
       <li><span>Pink (8)</span></li>
@@ -40,22 +44,24 @@
     </ul>
   </div>
   <div class="filter-types">
-    <div class="filter-title-outer">
+    <div class="filter-title-outer" (click)="expand('size')">
       <h2 class="filter-title">Filter By Size</h2>
+      <mat-icon (click)="expand('size')">{{expandOption === 'size' ? 'expand_less' : 'expand_more'}}</mat-icon>
     </div>
     <hr>
-    <ul class="filter-option-list">
+    <ul class="filter-option-list" [class.expanded-filter-option-list]="expandOption === 'size'">
       <li><span>Large (8)</span></li>
       <li><span>Medium (8)</span></li>
       <li><span>Small (8)</span></li>
     </ul>
   </div>
   <div class="filter-types">
-    <div class="filter-title-outer">
+    <div class="filter-title-outer" (click)="expand('tags')">
       <h2 class="filter-title">Product Tags</h2>
+      <mat-icon (click)="expand('tags')">{{expandOption === 'tags' ? 'expand_less' : 'expand_more'}}</mat-icon>
     </div>
     <hr>
-    <div class="tag-list">
+    <div class="tag-list" [class.expanded-filter-option-list]="expandOption === 'tags'">
       <div class="tag">Electronic Cigarettes</div>
       <div class="tag">Lingerie</div>
       <div class="tag">Eye Makeup</div>
