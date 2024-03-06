@@ -165,17 +165,6 @@
     gap: 30px;
     align-items: center;
   }
-
-  .carousel-item-image {
-    max-width: 70vw;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .buttons-outer {
-    left: 15px;
-    right: 10px;
-  }
   .carousel-item-left {
     display: flex;
     flex-direction: column;
@@ -186,5 +175,21 @@
   .carousel-item-title,
   .carousel-item-subtitle{
     text-align: center;
+  }
+  .carousel-item-image {
+    max-width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .buttons-outer {
+    left: 15px;
+    right: 10px;
+  }
+  .carousel-item-image {
+    max-width: 65vw;
+  }
+  .carousel-item-title{
+    font-size: 2rem;
   }
 }

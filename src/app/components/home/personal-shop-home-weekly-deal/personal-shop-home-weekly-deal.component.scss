@@ -1,5 +1,5 @@
 
-.title-outer {
+.weekly-deal-title-outer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,12 +8,10 @@
 }
 
 
-.main-title {
+.weekly-deal-main-title {
   text-align: center;
   color: #2a2a2a;
   display: inline-block;
-  position: relative;
-  vertical-align: top;
   font-weight: 400;
   font-size: 1.5rem;
   width: 100%;
@@ -21,7 +19,7 @@
   margin: 0 0 12px 0;
 }
 
-.line {
+.weekly-deal-line {
   background: #da2128;
   max-width: 90px;
   width: 100%;

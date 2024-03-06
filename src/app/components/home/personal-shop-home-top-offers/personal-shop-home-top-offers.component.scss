@@ -1,39 +1,48 @@
 .top-offers-inner {
-  min-height: 200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 5px;
 }
 
 .offer-card-outer {
   margin-top: 24px;
-}
-
-.offer-card {
-  min-height: 175px;
-  background-color: #ECECEC;
-  box-sizing: border-box;
-  border: 0.5px solid #DCDCDC;
   padding: 15px 20px;
+  background-color: #ECECEC;
+  border: 0.5px solid #DCDCDC;
+}
+
+.offer-card-inner {
+  position: relative;
+  min-height: 175px;
+}
+
+.product-image-outer {
+  position: absolute;
+  right: 0;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.offer-card-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 25%;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.offer-card-left {
-  min-height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.offer-card-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.offer-card-left-outer,
-.offer-card-right-outer {
-  display: flex;
-  align-items: center;
 }
 
 .fancy-text {
@@ -57,12 +66,40 @@
   cursor: default;
 }
 
+.offer-card-right-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  height: 100%;
+}
+
 .offer-card-image-outer {
   width: 100%;
-  height: auto;
+  height: fit-content;
 
   img {
+    opacity: 0.8;
     width: 100%;
     height: auto;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .fancy-text,
+  .title, {
+    text-align: center;
+  }
+
+  .offer-card-text {
+    align-items: center;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .top-offers-inner {
+    grid-template-columns: 1fr;
   }
 }
