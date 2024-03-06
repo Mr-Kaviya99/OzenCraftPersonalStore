@@ -12,6 +12,7 @@
 .filters {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .selector {
@@ -62,13 +63,23 @@
     flex-direction: column;
     align-items: flex-end;
   }
+
+}
+
+@media only screen and (max-width: 500px) {
+  /*.filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }*/
+  .products-outer {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 365px) {
   .filters {
     flex-direction: column;
     align-items: flex-start;
   }
-}
-@media only screen and (max-width: 500px) {
-  .products-outer {
-    align-items: center;
-  }
+
 }
