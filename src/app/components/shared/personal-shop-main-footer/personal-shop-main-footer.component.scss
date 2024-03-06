@@ -1,0 +1,62 @@
+.personal-shop-main-footer-outer {
+  background-color: rgb(42, 42, 42);
+  padding-top: 50px;
+}
+
+.main-footer-inner {
+  min-height: 100px;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+}
+
+.options-outer {
+  color: white;
+
+  ul {
+    padding: 0;
+    list-style: none;
+    color: #C1C1C1;
+    font-weight: 500;
+  }
+}
+
+.footer-title {
+  font-weight: 500;
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.footer-line {
+  background: #da2128;
+  max-width: 50px;
+  width: 100%;
+  height: 3px;
+  margin-bottom: 25px;
+}
+
+.call-us {
+  color: #C1C1C1;
+  font-weight: 500;
+}
+
+.contact-no {
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 400;
+  color: #da2128;
+  word-wrap: break-word;
+  margin: 0 0 10px;
+}
+
+.address {
+  color: #C1C1C1;
+  font-weight: 500;
+}
+
+.option {
+  margin-top: 10px;
+}

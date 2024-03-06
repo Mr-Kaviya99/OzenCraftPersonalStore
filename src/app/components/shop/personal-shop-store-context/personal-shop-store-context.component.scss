@@ -1,0 +1,26 @@
+.personal-shop-store-context-inner{
+  display: grid;
+  grid-template-columns: 1fr 4.5fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .personal-shop-store-context-inner {
+    grid-template-columns: 1fr 3.5fr;
+  }
+}
+@media only screen and (max-width: 992px) {
+
+  .personal-shop-store-context-inner {
+    grid-template-columns: 1fr 2.5fr;
+  }
+}
+@media only screen and (max-width: 768px) {
+
+  .personal-shop-store-context-inner {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}

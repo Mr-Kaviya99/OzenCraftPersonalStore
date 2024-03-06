@@ -20,6 +20,9 @@ import { PersonalShopHomeSpecialsComponent } from './components/home/personal-sh
 import { PersonalShopHomeSubscriptionComponent } from './components/home/personal-shop-home-subscription/personal-shop-home-subscription.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import { PersonalShopProductCardComponent } from './components/shared/personal-shop-product-card/personal-shop-product-card.component';
+import { PersonalShopStoreFiltersComponent } from './components/shop/personal-shop-store-filters/personal-shop-store-filters.component';
+import { PersonalShopStoreProductsComponent } from './components/shop/personal-shop-store-products/personal-shop-store-products.component';
+import {MatSliderModule} from "@angular/material/slider";
 
 @NgModule({
   declarations: [
@@ -37,6 +40,8 @@ import { PersonalShopProductCardComponent } from './components/shared/personal-s
     PersonalShopHomeSpecialsComponent,
     PersonalShopHomeSubscriptionComponent,
     PersonalShopProductCardComponent,
+    PersonalShopStoreFiltersComponent,
+    PersonalShopStoreProductsComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +49,8 @@ import { PersonalShopProductCardComponent } from './components/shared/personal-s
     CarouselModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
