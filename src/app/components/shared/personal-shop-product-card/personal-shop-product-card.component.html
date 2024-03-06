@@ -1,0 +1,15 @@
+<div class="shop-product-card-outer">
+  <div class="product-image">
+    <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/13.jpg" alt="">
+  </div>
+  <div class="product-description">
+    <div class="star-rating">
+      <mat-icon *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+                [ngClass]="{ 'gold-star': i < rating, 'black-star': i >= rating }" aria-hidden="true">
+        {{ star <= rating ? 'star' : 'star_border' }}
+      </mat-icon>
+    </div>
+    <h2 class="product-title">similique sunt in culpa qui officia</h2>
+    <span class="price">$ 100.00</span>
+  </div>
+</div>

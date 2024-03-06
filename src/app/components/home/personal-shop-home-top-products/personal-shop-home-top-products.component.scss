@@ -1,0 +1,78 @@
+.top-products-outer {
+  margin-top: 55px;
+}
+
+.tabs-outer {
+  border: 1px solid red;
+  position: relative;
+}
+
+.title-outer {
+  position: absolute;
+  top: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+
+.main-title {
+  color: #2a2a2a;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 15px 0 0 0;
+  margin: 0 0 5px 0 !important;
+}
+
+.line {
+  background: #da2128;
+  max-width: 90px;
+  width: 100%;
+  height: 3px;
+}
+
+.products-outer {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+
+  .products-outer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+  .products-outer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title-outer {
+    position: relative;
+  }
+  .products-outer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .products-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
