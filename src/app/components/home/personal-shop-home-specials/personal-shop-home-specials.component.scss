@@ -20,6 +20,7 @@
 .tab-button {
   padding: 3px 10px;
   border: none;
+  cursor: pointer;
   background-color: transparent;
 }
 
@@ -66,6 +67,7 @@
   border: .5px solid #dddddd;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
+  cursor: pointer;
 }
 
 .special-product-card-img {

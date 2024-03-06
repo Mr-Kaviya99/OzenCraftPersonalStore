@@ -40,6 +40,7 @@
     padding: 6px 15px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 
     span:nth-last-child(1) {
       font-weight: 500;
@@ -75,4 +76,5 @@ mat-slider {
   padding: 5px 6px;
   border-radius: 4px;
   text-transform: capitalize;
+  cursor: pointer;
 }
