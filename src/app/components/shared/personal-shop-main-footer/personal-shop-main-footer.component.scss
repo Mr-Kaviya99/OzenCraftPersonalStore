@@ -68,6 +68,26 @@
   margin-top: 10px;
 }
 
-.copyright{
+.copyright {
   color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .main-footer-inner {
+    grid-template-columns: 1.5fr repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .main-footer-inner {
+    grid-template-columns: 1.5fr  1fr;
+  }
+}
+@media only screen and (max-width: 475px) {
+
+  .main-footer-inner {
+    grid-template-columns: 1fr;
+  }
 }
