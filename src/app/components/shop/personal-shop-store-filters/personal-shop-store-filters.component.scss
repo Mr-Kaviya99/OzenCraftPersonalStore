@@ -1,0 +1,69 @@
+.personal-shop-store-filters-outer {
+  border: 1px solid red;
+  min-height: 100vh;
+
+  hr {
+    margin: 5px 0;
+  }
+}
+
+.filter-types {
+  margin-top: 25px;
+}
+
+.filter-title-outer {
+  background-color: #d4d4d4;
+  padding: 10px 15px;
+}
+
+.filter-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.filter-option-list {
+  padding: 0;
+  color: #2a2a2a;
+
+  li {
+    padding: 6px 15px;
+    display: flex;
+    justify-content: space-between;
+
+    span:nth-last-child(1) {
+      font-weight: 500;
+    }
+  }
+
+}
+
+//
+mat-slider {
+  width: 100%;
+}
+
+//
+
+.filter {
+  background-color: rgb(218, 33, 40);
+  padding: 5px 18px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 10px;
+  padding: 10px;
+}
+
+.tag {
+  border:.5px solid #dddddd;
+  padding: 5px 6px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}

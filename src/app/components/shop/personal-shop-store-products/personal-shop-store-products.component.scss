@@ -1,0 +1,41 @@
+.personal-shop-store-products-outer {
+  padding-top: 25px;
+}
+
+.page-title {
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  width: 50%;
+}
+
+
+.products-outer {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .products-outer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .products-outer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .products-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
