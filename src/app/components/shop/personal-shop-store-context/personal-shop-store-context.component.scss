@@ -24,3 +24,10 @@
     grid-template-columns: 1fr 1.5fr;
   }
 }
+@media only screen and (max-width: 500px) {
+
+  .personal-shop-store-context-inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
