@@ -7,5 +7,9 @@ import {Component, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class PersonalShopHomeTopProductsComponent {
+  selectedTab: string = 'Best Seller';
 
+  selectTab(tab: string): void {
+    this.selectedTab = tab;
+  }
 }

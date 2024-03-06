@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./personal-shop-home-specials.component.scss']
 })
 export class PersonalShopHomeSpecialsComponent {
+  selectedTab: string = 'Electronic';
 
+  selectTab(tab: string): void {
+    this.selectedTab = tab;
+  }
 }

@@ -1,328 +1,107 @@
 <div class="specials-outer">
   <div class="container">
     <div class="tabs-outer">
-      <div class="title-outer">
-        <h2 class="main-title">Shop By Special Product</h2>
-        <div class="line"></div>
+      <div class="top-outer">
+        <div class="title-outer">
+          <div class="title-inner">
+            <h2 class="main-title">Shop By Accessories Product</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="button-list">
+          <div class="tab-button" (click)="selectTab('Electronic')" [class.selected]="selectedTab === 'Electronic'">
+            Electronic
+          </div>
+          <div class="tab-button" (click)="selectTab('Accessories')" [class.selected]="selectedTab === 'Accessories'">Accessories
+          </div>
+          <div class="tab-button" (click)="selectTab('Appliances')" [class.selected]="selectedTab === 'Appliances'">Appliances</div>
+          <div class="tab-button" (click)="selectTab('Bags')" [class.selected]="selectedTab === 'Bags'">
+            Bags
+          </div>
+        </div>
       </div>
-      <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="end" color="warn">
-        <mat-tab label="Electronics">
-          <div class="products-outer">
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-            <div class="special-product-card-img">
-              <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                   alt="">
-            </div>
-            <div class="special-product-card-description">
-              <h2 class="product-title">similique sunt in culpa qui officia</h2>
-              <span class="price">$ 100.00</span>
-            </div>
-          </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-          </div>
-        </mat-tab>
-        <mat-tab label="Appliances">
-          <div class="products-outer">
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-          </div>
-        </mat-tab>
-        <mat-tab label="Accessories">
-          <div class="products-outer">
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-          </div>
-        </mat-tab>
-        <mat-tab label="Bags">
-          <div class="products-outer">
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-            <div class="special-product-card">
-              <div class="special-product-card-img">
-                <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
-                     alt="">
-              </div>
-              <div class="special-product-card-description">
-                <h2 class="product-title">similique sunt in culpa qui officia</h2>
-                <span class="price">$ 100.00</span>
-              </div>
-            </div>
-          </div>
-        </mat-tab>
-      </mat-tab-group>
+      <div class="products-outer">
+      <div class="special-product-card">
+        <div class="special-product-card-img">
+          <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
+               alt="">
+        </div>
+        <div class="special-product-card-description">
+          <h2 class="product-title">similique sunt in culpa qui officia</h2>
+          <span class="price">$ 100.00</span>
+        </div>
+      </div>
+      <div class="special-product-card">
+        <div class="special-product-card-img">
+          <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
+               alt="">
+        </div>
+        <div class="special-product-card-description">
+          <h2 class="product-title">similique sunt in culpa qui officia</h2>
+          <span class="price">$ 100.00</span>
+        </div>
+      </div>
+      <div class="special-product-card">
+        <div class="special-product-card-img">
+          <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
+               alt="">
+        </div>
+        <div class="special-product-card-description">
+          <h2 class="product-title">similique sunt in culpa qui officia</h2>
+          <span class="price">$ 100.00</span>
+        </div>
+      </div>
+      <div class="special-product-card">
+        <div class="special-product-card-img">
+          <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
+               alt="">
+        </div>
+        <div class="special-product-card-description">
+          <h2 class="product-title">similique sunt in culpa qui officia</h2>
+          <span class="price">$ 100.00</span>
+        </div>
+      </div>
+      <div class="special-product-card">
+        <div class="special-product-card-img">
+          <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
+               alt="">
+        </div>
+        <div class="special-product-card-description">
+          <h2 class="product-title">similique sunt in culpa qui officia</h2>
+          <span class="price">$ 100.00</span>
+        </div>
+      </div>
+      <div class="special-product-card">
+        <div class="special-product-card-img">
+          <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
+               alt="">
+        </div>
+        <div class="special-product-card-description">
+          <h2 class="product-title">similique sunt in culpa qui officia</h2>
+          <span class="price">$ 100.00</span>
+        </div>
+      </div>
+      <div class="special-product-card">
+        <div class="special-product-card-img">
+          <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
+               alt="">
+        </div>
+        <div class="special-product-card-description">
+          <h2 class="product-title">similique sunt in culpa qui officia</h2>
+          <span class="price">$ 100.00</span>
+        </div>
+      </div>
+      <div class="special-product-card">
+        <div class="special-product-card-img">
+          <img src="https://wordpressthemes.live/woo/WCM06/WCM060126/WP01/wp-content/uploads/2017/01/4.jpg"
+               alt="">
+        </div>
+        <div class="special-product-card-description">
+          <h2 class="product-title">similique sunt in culpa qui officia</h2>
+          <span class="price">$ 100.00</span>
+        </div>
+      </div>
+    </div>
     </div>
 
   </div>
